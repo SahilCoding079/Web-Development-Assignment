@@ -1,0 +1,186 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.myh1
+{
+    font-size: 5rem;
+    font-weight: bold;
+    color: orangered;
+    margin-top: 5rem;
+    text-align: center;
+}
+.myp1
+{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.mytable
+{
+    margin-left: 10rem;
+}
+.mytable th
+{
+    font-size: 2rem;
+}
+.mytable td
+{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.myinput
+{
+    margin: 2rem 2rem 0 2rem;
+    width: 20rem;
+    height: 3rem;
+    background-color: white;
+    border: 1px solid grey;
+    color: black;
+    padding: .3rem 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.mytbl
+{
+    margin: 1rem 2rem;
+}
+.mybtn1
+{
+    margin: 1rem 2rem;
+    padding: .2rem 1rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+}
+.mybtn2
+{
+    padding: .2rem 1rem;
+    font-weight: 600;
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+}
+.mybtn3
+{
+    margin-left: 1rem;
+    padding: .2rem 1rem;
+    font-weight: 600;
+    background-color: gold;
+    border: 1px solid gold;
+    color: black;
+}
+
+@media(width < 768px)
+{
+    .mytable
+    {
+        margin-left: 10rem;
+    }
+    .myp1
+    {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .myinput
+    {
+        height: 2.5rem;
+        font-size: 1.4rem;
+    }
+    .mybtn1
+    {
+        font-size: 1.4rem;
+    }
+    .mytable th
+    {
+        font-size: 1.6rem;
+    }
+    .mytable td
+    {
+        font-size: 1.6rem;
+    }
+    .mybtn2, .mybtn3
+    {
+        font-size: 1.4rem;
+    }
+    .mytbl
+    {
+        align-items: center;
+        width: 80%;
+    }
+}
+
+@media(width < 600px)
+{
+    .myh1
+    {
+        font-size: 3rem;
+        text-align: center;
+        margin-left: 6rem;
+    }
+    .myp1
+    {
+        margin-left: 5rem;
+        text-align: center;
+    }
+}
+
+@media(width < 500px)
+{
+    .mytable
+    {
+        margin-left: 2rem;
+    }   
+    .myh1
+    {
+        margin-left: 1rem;
+    }
+    .myp1
+    {
+        margin-left: 13rem;
+        font-size: 1rem;
+        width: 50%;
+    }
+    .mytable th
+    {
+        font-size: 1.4rem;
+    }
+    .mytable td
+    {
+        font-size: 1.2rem;
+    }
+    .mybtn1, .mybtn2, .mybtn3
+    {
+        font-size: 1.2rem;
+    }
+    .myinput
+    {
+        height: 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media(width < 400px)
+{
+    .myp1
+    {
+        margin-left: 6rem;
+        width: 70%;
+    }
+    .mybtn3
+    {
+        display: flex;
+        margin-top: 1rem;
+        padding: .2rem 1.2rem;
+        text-align: center;
+    }
+    .mybtn2
+    {
+        margin-left: 1rem;
+    }
+}

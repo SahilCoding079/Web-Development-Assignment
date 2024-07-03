@@ -1,0 +1,34 @@
+<h1 class="myh1">Student List</h1>
+<p class="myp1">
+    Please type name inside the input field and click on add student button to add a new student
+</p>
+<div class="container mytable">
+    <div class="row">
+        <div class="col-md-12">
+            <input #student type="text" [placeholder]="UserName" class="myinput"><br>
+            <button (click)="addStudent(student)" class="mybtn1">Add Student</button>
+
+            <table class="table mytbl">
+                <thead>
+                    <tr>
+                        <th>Sr.No.</th>
+                        <th>Student Name</th>
+                        <th>Action</th>
+                    </tr>   
+                </thead>
+                <tbody class="btl-body">
+                    <!-- Here, student is a variable that is created by coder to store the student names, studentList is the property in typescript file, index is an in-built variable in *ngFor directive and studentno is a variable created by coder to store the index no. -->
+                    <tr *ngFor="let student of studentList; index as studentno">
+                        <td>{{ studentno + 1 }}</td>
+                        <td>{{ student }}</td>
+                        <td>
+                            <!-- Here, studentno is passed as parameter inside dltStud() function. It will remove the student through its index no. -->
+                            <button (click)="dltStud(studentno)" class="mybtn2">Remove</button>
+                            <button class="mybtn3">Update</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
