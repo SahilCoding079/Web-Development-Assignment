@@ -1,0 +1,123 @@
+.cart-section {
+    margin-top: 5rem;
+}
+.cart-section h2
+{
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+.cart-section .card {
+    padding: 0 2rem;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+}
+
+.cart-section .mycart {
+    display: flex;
+    margin-top: 5rem;
+}
+.mycart img {
+    width: 15rem;
+}
+.product-content .product-name {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.product-content .product-price {
+    font-size: 1.6rem;
+}
+
+.product-content .product-des {
+    max-width: 70rem;
+    font-size: 1.2rem;
+}
+
+.product-qnty span {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+}
+
+.product-qnty .dec-btn,
+.inc-btn {
+    border: 1px solid rgb(228, 224, 224);
+    background-color: rgb(228, 224, 224);
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: .5rem 1rem;
+}
+
+.product-content .dlt-btn {
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    padding: .3rem 1.1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 2rem 0;
+
+}
+
+.product-content .dlt-btn .dlt-icon {
+    margin-right: 1rem;
+}
+
+.cart-section .removeall-btn {
+    margin: 3rem 0;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    padding: .3rem 1.1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.cart-section .checkout-btn
+{
+    float: right;
+    margin: 3rem 0;
+    border: 1px solid red;
+    background-color: white;
+    color: black;
+    padding: .3rem 1.1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.cart-section .removeall-btn .dlt-icon
+{
+    margin-right: 1rem;
+}
+@media(width < 768px) 
+{
+    .cart-section .product-content {
+        padding-left: 5rem;
+    }
+}
+
+@media(width < 600px) 
+{
+    .product-content .product-name {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .product-content .product-price {
+        font-size: 1.4rem;
+    }
+}
+
+@media(width < 500px) 
+{
+    .cart-section .mycart {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 5rem;
+    }
+    .mycart img {
+        width: 10rem;
+        margin-left: 5rem;
+        margin-bottom: 2rem;
+    }
+}

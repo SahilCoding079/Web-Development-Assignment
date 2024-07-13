@@ -1,0 +1,112 @@
+.mylist h1
+{
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 3rem;
+}
+.mycontent
+{
+    margin-top: 5rem;
+}
+.product-img img
+{
+    border-color: transparent;
+    width: 20rem;
+    padding: 2rem 0;
+}
+.mylist .main-content
+{
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 2rem 0;
+}
+.mylist .product-content
+{
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+.mylist .product-name
+{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.mylist .product-price
+{
+    font-size: 1.6rem;
+}
+.mylist .product-des
+{
+    max-width: 70rem;
+    font-size: 1.2rem;
+}
+.product-qnty span
+{
+    font-size: 1.6rem;
+    padding: 0 1rem;
+}
+.product-qnty .dec-btn, .inc-btn
+{
+    border: 1px solid rgb(228, 224, 224);
+    background-color: rgb(228, 224, 224);
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: .5rem 1rem;
+}
+.add-btn
+{
+    margin-top: 1rem;
+    border: 1px solid gold;
+    background-color: gold;
+    padding: .5rem 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.add-btn .cart-icon
+{
+    margin-right: 1rem;
+}
+
+
+@media(width < 992px)
+{
+
+}
+
+@media(width < 768px)
+{
+
+}
+
+@media(width < 600px)
+{
+    .mycontent
+    {
+        margin-left: 3rem;
+    }
+    .mylist h1
+    {
+        font-size: 4rem;
+    }
+    .product-img img
+    {
+        width: 15rem;
+    }
+    .mylist .main-content
+    {
+        width: 93%;
+    }
+}
+
+@media(width < 400px)
+{
+    .mylist .main-content
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .product-img img
+    {
+        margin-left: 2rem;
+    }
+}

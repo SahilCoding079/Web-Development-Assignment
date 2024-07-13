@@ -1,0 +1,23 @@
+<section class="container checkout">
+    <h1 class="check-head">~ Checkout ~</h1>
+    <div class="checkout-content">
+        <h3 class="sub-head">Add Shipping Information</h3>
+        <form class="myform" [formGroup]="checkoutForm" (ngSubmit)="checkout()">
+            <input type="text" [placeholder]="name" name="user" formControlName="user">
+            <span *ngIf="user && user.invalid && user.touched">The Name is invalid</span>
+            <input type="email" [placeholder]="emailText" name="email" formControlName="email">
+            <span *ngIf="email && email.invalid && email.touched">The email is invalid</span>
+            <input type="number" [placeholder]="number" name="number" formControlName="number">
+            <span *ngIf="contact && contact.invalid && contact.touched">Invalid Contact Number</span>
+            <textarea [placeholder]="address" name="address" formControlName="address"></textarea>
+            <button class="check-btn" [disabled]="checkoutForm.invalid">Order Now</button>
+        </form>
+    </div>
+    <div class="review">
+        <h1 class="review-head">~ Review ~</h1>
+        <div class="review-text">
+            <textarea [placeholder]="review"></textarea>
+            <button type="submit" class="review-btn">Submit</button>
+        </div>
+    </div>
+</section>

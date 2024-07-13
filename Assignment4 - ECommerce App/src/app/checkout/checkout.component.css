@@ -1,0 +1,106 @@
+.checkout
+{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.check-head
+{
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    background-color: gold;
+    padding: .3rem 3rem;
+    color: black;
+}
+.checkout .sub-head
+{
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+}
+.checkout .checkout-content
+{
+    border: 1px solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    padding: 2rem;
+}
+.checkout .checkout-content .myform
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 1rem;
+    margin-top: 2rem;
+}
+.checkout .checkout-content input, textarea
+{
+    width: 22rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: black;
+    padding: .3rem 1rem;
+}
+.checkout textarea
+{
+    height: 15rem;
+}
+.checkout .checkout-content .myform span
+{
+    color: red;
+    font-size: 1.4rem;
+}
+.checkout .checkout-content .check-btn
+{
+    background-color: greenyellow;
+    border: 1px solid greenyellow;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: .5rem 0;
+    transition: all 0.3s;
+    margin-top: 1rem;
+}
+.checkout .checkout-content .check-btn:hover
+{
+    background-color: transparent;
+    transition: all 0.3s;
+}
+.review
+{
+    margin-top: 3rem;
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+}
+.review .review-text
+{
+    display: grid;
+    width: 22rem;
+    height: 3rem;
+}
+.review .review-head
+{
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    background-color: gold;
+    padding: .3rem 3rem;
+    color: black;
+}
+.review .review-btn
+{
+    background-color: gold;
+    border: 1px solid gold;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: .5rem 0;
+    transition: all 0.3s;
+    margin-top: 2rem;
+}
+.review .review-btn:hover
+{
+    background-color: transparent;
+    transition: all 0.3s;
+}   

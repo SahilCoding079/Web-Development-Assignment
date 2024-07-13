@@ -1,0 +1,35 @@
+<section class="cart-section">
+    <div class="container">
+        <h2>Your Cart</h2>
+        <div *ngIf="getCartDetails">
+            <div class="row card">
+                <div *ngFor="let getcartDetail of getCartDetails" class="col-md-12 mycart">
+                    <div class="col-md-3">
+                        <img src="{{getcartDetail.image}}">
+                    </div>
+                    <div class="product-content col-md-9">
+                        <p class="product-name">{{getcartDetail.name}}</p>
+                        <p class="product-price">{{getcartDetail.price}}</p>
+                        <p class="product-des">
+                            {{getcartDetail.description}}
+                        </p>
+                        <p class="product-qnty">
+                            <button type="button" class="inc-btn"
+                                (click)="decQnt(getcartDetail.prodId, getcartDetail.qnty)"><i
+                                    class="fa-solid fa-minus"></i></button>
+                            <span>{{getcartDetail.qnty}}</span>
+                            <button type="button" class="dec-btn"
+                                (click)="incQnt(getcartDetail.prodId, getcartDetail.qnty)"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </p>
+                        <button type="button" class="dlt-btn" (click)="singleDlt(getcartDetail.prodId)"><i
+                                class="fa-solid fa-trash dlt-icon"></i>Remove</button>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="removeall-btn" (click)="removeall()"><i class="fa-solid fa-trash dlt-icon"></i>Remove
+                All</button>
+                <button routerLink="/checkout" class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+</section>

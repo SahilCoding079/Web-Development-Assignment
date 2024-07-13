@@ -1,0 +1,24 @@
+<div class="container mylist">
+  <h1>Product List</h1>
+  <div class="row mycontent">
+    <div class="col-md-12 main-content" *ngFor="let i of productList">
+      <div class="col-md-3 product-img">
+        <img src="{{i.image}}" alt="img">
+      </div>
+      <div class="col-md-9 product-content">
+        <p class="product-name">{{i.name}}</p>
+        <p class="product-price">{{i.price}}</p>
+        <h3 class="product-head">Description :</h3>
+        <p class="product-des">
+          {{i.description}}
+        </p>
+        <p class="product-qnty">
+          <button type="button" class="dec-btn" (click)="dec(i)"><i class="fa-solid fa-minus"></i></button>
+          <span>{{i.qnty}}</span>
+          <button type="button" class="inc-btn" (click)="inc(i)"><i class="fa-solid fa-plus"></i></button><br>
+        </p>
+        <button class="add-btn" (click)="addCart(i)"><i class="fa-solid fa-cart-plus cart-icon"></i>Add</button> 
+      </div>
+    </div>
+  </div>
+</div>
